@@ -9,6 +9,7 @@ import java.util.Scanner;
  * Constraints
  * 
  * A will consist at most 50 lower case english letters. 
+ * 
  * Sample Input
  * 
  * madam 
