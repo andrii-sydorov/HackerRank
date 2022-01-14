@@ -48,8 +48,26 @@ public class FromTelegramm {
     }
 
     private static String reverseCompleteString(String data) {
+        StringBuilder sb = new StringBuilder();
+        char[] chData = data.toCharArray();
+        StringBuilder temp = new StringBuilder();
+        for (int i = 0; i < chData.length; i++) {
+            if (Character.isAlphabetic(chData[i]) || Character.isDigit(chData[i])) {
+                temp.append(chData[i]);
+            } else if (temp.length() != 0){
+                sb.append(reverseStringBuilder(temp));
+                temp.setLength(0);
+            } else {
+                sb.append(chData[i]);
+            }
+        }
+        return sb.toString();
+    }
 
-        return null;
+    private static String reverseStringBuilder(StringBuilder sb) {
+        char[] chArr = new char[sb.length()];
+        sb.getChars(0, sb.length(), chArr, 0);
+        
     }
 
 }
