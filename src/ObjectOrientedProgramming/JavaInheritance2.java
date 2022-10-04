@@ -15,7 +15,7 @@ package ObjectOrientedProgramming;
  * passing it integer parameters.
  * 
  * Output Format
- * 
+ *
  * You are not responsible for printing anything to stdout. Your add method must
  * return the sum of its parameters.
  * 
